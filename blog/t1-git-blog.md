@@ -1,13 +1,26 @@
-Title
+git in 3 main points
 
-Subtitle
+or why consultants should take lessons from developers & sleep more
 
-Date
+20th November 2014
 
-Paragraph 1
+Having spent alot of time in consulting environments collaborating in teams and wrangling powerpoint decks into shape, the experience of using git and GitHub has been eye-opening. Truly, if only a version of git existed in the world of slides, bullets, main points and 4 box matrices... It would make creating that deck so incredibly easy - here's how:
 
-Paragraph 2
+1. Merge pages into the electronic master:
 
-Paragraph 3
+Every time I managed a project we had a simple workflow - I held the electronic "master". Each consultant sent over their slides that then needed to be inserted back into the deck. Manually. By me, after detaching their slides from emails and checking that I wasn't adding them in the wrong place or accidentally deleting things I shouldn't. And then to check that no information was accidentally lost from the old slide when the new slide was inserted? Easy, just compare the last paper copy of that page to the new one... ahem.
 
-Add as many paragraphs as you want!!!
+git allows for simple and clear reviews and merges of changes. Simply send your changes from your branch over to the master with a pull request. The master branch owner reviews those changes and decides whether to merge or not. When it is merged and it turns out both the branch owner and master have edited the SAME thing? Simple. git alerts to a merge conflict and highlights where those conflicts are. Isolate them, review and merge what you want, discard what you don't. (And never a print out in sight - magic)
+
+2. Locate that "final" "finalversion3" copy easily:
+
+You know you've been there - mopping up after a steering committee and the 3am finish you pulled to complete the deck? All you have to do now is to locate the final file that was used in the meeting and distribute it. Cttee_Final.ppt right ? Or how about Cttee_Finalv2.ppt? or that other one Cttee_Finalv2_asPresentedonDay.ppt? where the hell is it?
+
+git provides a simple way to manage all of these changes (and more). Each time a new copy of the file is saved it can be committed (and you don't even have to call it version1 , 2, 3 ) - it will magically have the last final copy available to you. And all prior copies too - at the moment they were committed.
+
+So when your boss magically asks for the version he saw Monday morning and "that slide with the 4 box and waterfall" to be added to the distribution copy... just go through your branches and sigh with relief!
+
+3. Other ...
+
+Well, really there always have to be 3 main points right - I've not gone that far over to the tech side ;-)
+
