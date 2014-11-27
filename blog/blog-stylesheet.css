@@ -92,3 +92,33 @@ padding-right: 20px;
   height:20px;
   width: auto;
 }
+
+.blog_content{
+  display: block;
+  overflow: auto;
+}
+.blog_subtitle{
+  display: block;
+  font-style: italic;
+}
+.blog_content{
+  color: grey;
+
+}
+
+.blog_title{
+  font-weight: bold;
+  font-size: 22px;
+  color: maroon;
+}
+
+.blog_date{
+  font-weight: lighter;
+  font-size: 12px;
+  color: grey;
+}
+.content_title{
+  font-weight: bolder;
+  font-size: 18px;
+
+}
