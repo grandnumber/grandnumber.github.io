@@ -3,6 +3,7 @@ body{
   padding: 0;
   color: #333333;
 font-family: Georgia, Serif;
+display: relative;
 }
 
 
@@ -59,6 +60,22 @@ text-decoration: none;
 ul{
 list-style: none;
 }
+
+#holder{
+display: relative;
+padding-top: 75px;
+padding-left: 480px;
+/*float: center;
+*/display: absolute:;
+color: #007FFF;
+font-weight: bold;
+font-style: italic;
+}
+
+#holder span{
+display: block;
+}
+
 
 #blogs{
   font-weight: bold;
