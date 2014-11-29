@@ -39,7 +39,7 @@
 
 <p> The CSS box model is well known - essentially every element can be represented by a box. If we take a simple piece of text in its content box, we can then style it by adding some space around the text, we can then add a border around it and then add a margin around that.   </p>
 
-<p> One key thing to note is that margins are collapsible - padding and borders are not. When two elements are styled side by side they will be separated by the amount of both their padding ad both their borders BUT only the greater of both their margins. In this way we can ensure that the space between adjoining elements is equal to the margin we set. For example let's take 2 boxes which we want to keep 20px away from eachother. We set a margin property of 20px on both - if margins did not collapse they would be 40px away (20px +20px). </p>
+<p> One key thing to note is that margins are collapsible - padding and borders are not. When two elements are styled side by side they will be separated by the amount of both their padding ad both their borders BUT only the greater of both their margins. In this way we can ensure that the space between adjoining elements is equal to the margin we set. This makes intuitive sense if we think of old school essays where we want 1.5 spacing on our essays. Effectively each line needs a margin (spacing) of 1.5xlines. But if we add the 1.5x margin of the top line to the 1.5x margin of the second line we would end up with a 3x spacing - double what we wanted. So we collapse the margins - ultimately both lines want to achieve a 1.5x margin.  </p>
 
 <p class="content_title">2. IDs beat classes, but some classes beat other classes too: </p>
 
