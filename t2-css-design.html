@@ -1,0 +1,70 @@
+
+<!DOCTYPE html>
+  <head>
+    <title>Janet Brown</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="blog-stylesheet.css">
+    <link rel="stylesheet" type="text/css" href="default-stylesheet.css">
+  </head>
+
+  <body>
+   <div id ="title">
+
+    Janet Brown
+   </div>
+
+    <div id="nav">
+      <ul>
+         <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Me</a></li>
+        <li><a href="blog-template.html">Blog</a></li>
+        <li><a href="portfolio.html">Portfolio</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+
+     <div id ="headshot">
+      <img src="imgs/Facebook in B&W copy.jpg" alt="Header Picture">
+    </div>
+  </div>
+
+    <div class="blog_content">
+      <span class = "blog_title">CSS - a primer on the basics!</span> <span class ="blog_subtitle"> why is all this specificity useful?</span>
+
+<p class ="blog_date">28th November 2014</p>
+
+<p>I have been battling with CSS all week - gradually uncovering more and more about the rules of specificity and inheritance. So in the spirit of discovery...</p>
+
+<p class="content_title">1. Margins really ARE different to Borders & Padding: </p>
+
+<p> The CSS box model is well known - essentially every element can be represented by a box. If we take a simple piece of text in its content box, we can then style it by adding some space around the text, we can then add a border around it and then add a margin around that.   </p>
+
+<p> One key thing to note is that margins are collapsible - padding and borders are not. When two elements are styled side by side they will be separated by the amount of both their padding ad both their borders BUT only the greater of both their margins. In this way we can ensure that the space between adjoining elements is equal to the margin we set. For example let's take 2 boxes which we want to keep 20px away from eachother. We set a margin property of 20px on both - if margins did not collapse they would be 40px away (20px +20px). </p>
+
+<p class="content_title">2. IDs beat classes, but some classes beat other classes too: </p>
+
+<p> Classes and ID's are used to select specific html elements. They are very similar - both provide a logical shorthand to select our elements in CSS. However, while we can have as many elements of a certain class type as we want we can only have one element of a certain id type. Thus, Classes are good for commonly recurring elements such as buttons. ID's are good for major structural elements like headers or other unique elements like navbars.  </p>
+
+<p> Confusingly, an element can have both classes and an id specified, so it is necessary to understand which style will be applied. When the two conflict the ID will win as it has greater specificity and CSS prioritises it. In the event that two classes are applied to the same element and they conflict, then the first listed class (in the html assignment) will win.
+
+
+<!-- <p class ="content_title ">2. Relative, Fixed, Absolute </p>
+
+<p> stuff here </p> -->
+
+    </div>
+
+
+    <div id="footer">
+      <ul>
+        <li><a href="http://www.twitter.com"><img src="imgs/Eternity.jpg"></a></li>
+        <li><a href="http://www.plus.google.com"><img src="imgs/Eternity.jpg"></a></li>
+        <li><a href="http://www.linkedin.com"><img src="imgs/Eternity.jpg"></a></li>
+        <li><a href="http://www.github.com/"><img src="imgs/Eternity.jpg"></a></li>
+      </ul>
+    </div>
+
+
+  </body>
+
+</html>
