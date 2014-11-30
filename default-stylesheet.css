@@ -92,11 +92,11 @@ display: block;
 #footer{
 background-color: grey;
 position: fixed;
-bottom: 0;
+bottom: 0em;
 width: 100%;
 display: block;
 text-align: center;
-margin: 0 auto;
+margin: 0em ;
 
 }
 
