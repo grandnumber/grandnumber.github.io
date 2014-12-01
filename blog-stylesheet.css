@@ -1,99 +1,4 @@
-body{
-  margin: 0;
-  padding: 0;
-  color: #333333;
-font-family: Georgia, Serif;
-}
-
-
-#title {
-  text-align: center;
-  font-size: 50px;
-  font-weight: bolder;
-/*  paddingpx;
-*/  color: grey;
-}
-#headshot{
-height: 400px;
-display: inline-block;
-float: left;
-
-}
-
-#headshot img {
-  width:auto; /*width of your image*/
-   height: 250px;
-   margin:25px; /* If you want no margin */
-   padding:25px; /*if your want to padding */
-
-}
-
-#nav{
-  background-color: white;
- /* border: 1px solid #ccc;
-  border-width: 1px 0;*/
-  width: 100%;
-  margin: 0;
-  text-align: center;
-
-}
-
-#nav ul{
-padding-top: 10px;
-padding-bottom: 10px;
-}
-
-#nav li{
-padding: 20px;
-display: inline;
-}
-
-#nav a{
-display: inline-block;
-padding: 10px;
-color: grey;
-text-decoration: none;
-}
-
-ul{
-list-style: none;
-}
-
-#blogs{
-  font-weight: bold;
-  padding-top: 25px;
-}
-
-#blogs span{
-  color: grey;
-  font-size: 12px;
-  font-weight: lighter;
-  display: block;
-}
-
-#footer{
-background-color: grey;
-position: fixed;
-bottom: 0;
-width: 100%;
-display: block;
-text-align: center;
-margin: 0 auto;
-
-}
-
-#footer li{
-display: inline-block;
-padding: 10px;
-float: none;
-padding-left: 20px;
-padding-right: 20px;
-}
-
-#footer img{
-  height:20px;
-  width: auto;
-}
+/**/
 
 .blog_content{
   display: block;
@@ -105,6 +10,7 @@ padding-right: 20px;
 }
 .blog_content{
   color: grey;
+  overflow:auto;
 
 }
 

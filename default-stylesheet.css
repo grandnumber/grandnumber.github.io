@@ -2,7 +2,7 @@ body{
   margin: 0;
   padding: 0;
   color: #333333;
-font-family: Georgia, Serif;
+font-family: "Century Gothic", CenturyGothic, Geneva, AppleGothic, sans-serif;
 display: relative;
 }
 
@@ -61,25 +61,54 @@ ul{
 list-style: none;
 }
 
-#holder{
-display: relative;
-padding-top: 75px;
-padding-left: 480px;
-/*float: center;
-*/display: absolute:;
-color: #007FFF;
+/*#left_box{
+position:relative;
+display: inline-block;
+vertical-align: top;
+padding-top: 40px;
+}
+#left_box span{
+display: block
+}*/
+
+.bold{
 font-weight: bold;
 font-style: italic;
+color: #AD094D;
 }
+#holder{
+position: relative;
+padding-top: 50px;
+padding-left: 100px;
+font-size: 2em;
+/*color: grey;
+font-weight: bold;
+font-style: italic;*/
+display: inline-block;
+vertical-align: top;
+margin-left: 100px;
+/*margin-right: auto;*/
+}
+
 
 #holder span{
-display: block;
+display: inline-block;
 }
 
+/*#holder img{
+   width:600px; width of your image
+   margin-top: 10px;  If you want no margin
+}
+*/
+
+#clearwrap{
+  padding-bottom: 100px;
+}
 
 #blogs{
   font-weight: bold;
   padding-top: 25px;
+
 }
 
 #blogs span{
@@ -89,12 +118,21 @@ display: block;
   display: block;
 }
 
+.wrap{
+position: relative;
+margin: 0 auto;
+width: 900px;
+height: 60px;
+}
+
 #footer{
 background-color: grey;
 position: fixed;
 bottom: 0em;
+z-index: 999999;
 width: 100%;
-display: block;
+/*float:left;
+*/display: block;
 text-align: center;
 margin: 0em ;
 
@@ -102,43 +140,14 @@ margin: 0em ;
 
 #footer li{
 display: inline-block;
-padding: 10px;
+padding: 0px;
 float: none;
 padding-left: 20px;
 padding-right: 20px;
 }
 
 #footer img{
-  height:20px;
+  height: 45px;
   width: auto;
 }
 
-.blog_content{
-  display: block;
-  overflow: auto;
-}
-.blog_subtitle{
-  display: block;
-  font-style: italic;
-}
-.blog_content{
-  color: grey;
-
-}
-
-.blog_title{
-  font-weight: bold;
-  font-size: 22px;
-  color: maroon;
-}
-
-.blog_date{
-  font-weight: lighter;
-  font-size: 12px;
-  color: grey;
-}
-.content_title{
-  font-weight: bolder;
-  font-size: 18px;
-
-}
