@@ -28,5 +28,13 @@
 .content_title{
   font-weight: bolder;
   font-size: 18px;
+}
 
+.new_line{
+  display: block;
+}
+
+.quote{
+  font-style: italic;
+  font-size: 14px;
 }
