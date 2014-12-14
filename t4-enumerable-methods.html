@@ -1,0 +1,109 @@
+
+<!DOCTYPE html>
+  <head>
+    <title>Janet Brown</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="blog-stylesheet.css">
+    <link rel="stylesheet" type="text/css" href="default-stylesheet.css">
+  </head>
+
+  <body>
+   <div id ="title">
+
+    Janet Brown
+   </div>
+
+    <div id="nav">
+      <ul>
+         <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Me</a></li>
+        <li><a href="blog-index.html">Blog</a></li>
+        <li><a href="portfolio.html">Portfolio</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+
+     <div id ="headshot">
+      <img src="imgs/Facebook in B&W copy.jpg" alt="Header Picture">
+    </div>
+  </div>
+
+    <div class="blog_content">
+      <span class = "blog_title">Mapping your way around arrays...</span> <span class ="blog_subtitle"> things hard to write catchy titles for ...</span>
+
+<p class ="blog_date">14th December 2014</p>
+
+<p>Ruby has proven itself as truly intuitive and closer to english than any other language I have played with to date. And it is, within reason, very user friendly - one of the great parts of that is the Ruby Enumerables module. In very simple terms the <a href = "ww.ruby-doc.org/core-2.1.5/Array.html#method-i-each"> 'Enumerable Module' </a> provides tonnes of iteration methods. Iteration Methods?  </p>
+
+<p class="content_title">1. Iteration Methods?! </p>
+
+<p> Yep - iteration methods are simply ways in which to loop, pass or run through an object, array or other enumerable objects. What's that? Looping through an array - means taking each item in an array in turn, but not stopping til the end (or where you want to) - a  very basic example below: </p>
+ <p>This is the <code>Each </code> method on an array used to print each item to the console in turn :</p>
+<pre><code> array = [1,2,3,4,5]
+              array.each |i| do
+                puts i
+              end
+//:
+              1
+              2
+              3
+              4
+              5</code></pre>
+
+
+
+<p class="content_title">2. And so to map...  </p>
+
+<p> The <code> map </code> enumerable method is a powerful enumerable for arrays.  <a class = "quote" href = "http://www.ruby-doc.org/core-2.1.5/Array.html#method-i-map"> Invokes the given block once for each element of self. Creates a new array containing the values returned by the block.
+</a>  </p>
+
+<p> What that means in simple terms is that you can use the <code> map </code>  function to easily change every item in an array with one line - for instance, you can double every value, halve it, add to it etc.. </p>
+ <p>This is the <code>Map </code> method on our same array used to double each item & print the result to the console :</p>
+
+<pre><code> puts array.map { |x| x*2 }
+            //
+              [2,4,6,8,10]</code></pre>
+
+<p class="content_title">3. You can keep it light or go serious with the map method too !! </p>
+
+<p> In the above example the map method returned you the result from running the map function. But it did not alter the original array. Which is handy when you want to try something and not permanently alter your sources etc. But sometimes you want to get serious with your changes - like serious! and intuitively Ruby allows you to do that by running the <code> map! </code> function instead of the <code> map </code> function. In simple terms: <code> map </code> will run your method and tell you the results but preserve your original array (a non-destructive method). In contrast the <code> map! </code> function will run your method against your array and then CHANGE that array to the result (a destructive method). </p>
+
+<p>Example 1: The <code>Map </code> method doubles each item & returns the result, but when we print the array to the console it is preserved :</p>
+
+<pre><code> puts array.map { |x| x*2 }
+            //
+              [2,4,6,8,10]</code></pre>
+
+<pre><code> puts array
+            //
+              [1,2,3,4,5]</code></pre>
+
+<p>Example 2: The <code>Map! </code> method doubles each item & returns the result, but when we print the array to the console it is preserved :</p>
+
+<pre><code> puts array.map! { |x| x*2 }
+            //
+              [2,4,6,8,10]</code></pre>
+
+<pre><code> puts array
+            //
+              [2,4,6,8,10]</code></pre>
+
+    </div>
+
+<div id = "clearwrap">
+</div>
+
+
+    <div id="footer">
+     <ul>
+        <li><a href="http://www.twitter.com"><img src="imgs/Twitter_logo_blue.png"></a></li>
+        <li><a href="http://www.facebook.com"><img src="imgs/FB-f-Logo__blue_72.png"></a></li>
+        <li><a href="http://www.linkedin.com"><img src="imgs/LinkedIN.png"></a></li>
+        <li><a href="http://www.github.com/"><img src="imgs/Octocat.jpg"></a></li>
+      </ul>
+    </div>
+
+
+  </body>
+
+</html>
