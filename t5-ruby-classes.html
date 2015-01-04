@@ -1,0 +1,115 @@
+
+<!DOCTYPE html>
+  <head>
+    <title>Janet Brown</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="blog-stylesheet.css">
+    <link rel="stylesheet" type="text/css" href="default-stylesheet.css">
+  </head>
+
+  <body>
+   <div id ="title">
+
+    Janet Brown
+   </div>
+
+    <div id="nav">
+      <ul>
+         <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Me</a></li>
+        <li><a href="blog-index.html">Blog</a></li>
+        <li><a href="portfolio.html">Portfolio</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+
+     <div id ="headshot">
+      <img src="imgs/Facebook in B&W copy.jpg" alt="Header Picture">
+    </div>
+  </div>
+
+    <div class="blog_content">
+      <span class = "blog_title">Classes & Cars ...</span> <span class ="blog_subtitle"> without hitting the road </span>
+
+<p class ="blog_date">4th January 2014</p>
+
+<p>Today we are looking at ruby classes - and we are going to construct a car class. You can think of the class as a way of creating our car and class methods as actions we want our car to do. First up - creating the car  </p>
+
+<p class="content_title">1. Create the basic car </p>
+
+<p> Constructing the car class is as simple as initiliazing it using the <code>class </code> approach. The code below allows us to create a new class Car and initializes a new instance variable @car. Instance variables can be referenced and accessed by class methods (actions that the class can take) :</p>
+<pre><code>
+  class Car
+    def initialize
+    @car = ""
+    end
+  end</code></pre>
+
+<p class="content_title">2. Going vroom vroom...  </p>
+
+<p> So to have our car do anything we need to create some <code> methods </code> inside our class which will be accesses by any new car we create ...
+</a>  </p>
+
+<pre><code>
+
+  class Car
+
+  def initialize
+    @car = ""
+    @driver =""
+  end
+
+  def type
+    puts "Please enter your car type here:"
+    @car = gets.chomp
+  end
+
+  def driver
+    puts "Please tell me what type of driver you are here:"
+    @driver = gets.chomp
+  end
+
+  def vroom
+    puts "My #{@car} likes to go, vroom vroooommm..."
+  end
+
+  def reliability
+    puts "I drive a #{@car} and I am a #{@driver} driver!! "
+  end
+
+end
+
+</code></pre>
+
+<p class="content_title">3. Watching our car in method action ... </p>
+
+<p> Getting our car to do things is as simple as initializing a new car and calling the methods we created for it. See below for an example of a Toyota car driven by a terrible driver - clearly noone we know ...
+
+<pre><code>
+my_wheels = Car.new
+my_wheels.type // Toyota
+my_wheels.driver // terrible
+my_wheels.vroom // My Toyota likes to go, vroom vroooommm...
+my_wheels.reliability // I drive a Toyota and I am a terrible driver!
+</code></pre>
+ </p>
+
+</div>
+
+<div id = "clearwrap">
+</div>
+
+
+    <div id="footer">
+     <ul>
+        <li><a href="http://www.twitter.com"><img src="imgs/Twitter_logo_blue.png"></a></li>
+        <li><a href="http://www.facebook.com"><img src="imgs/FB-f-Logo__blue_72.png"></a></li>
+        <li><a href="http://www.linkedin.com"><img src="imgs/LinkedIN.png"></a></li>
+        <li><a href="http://www.github.com/"><img src="imgs/Octocat.jpg"></a></li>
+      </ul>
+    </div>
+
+
+  </body>
+
+</html>
