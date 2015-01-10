@@ -1,0 +1,89 @@
+
+<!DOCTYPE html>
+  <head>
+    <title>Janet Brown</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="blog-stylesheet.css">
+    <link rel="stylesheet" type="text/css" href="default-stylesheet.css">
+  </head>
+
+  <body>
+   <div id ="title">
+
+    Janet Brown
+   </div>
+
+    <div id="nav">
+      <ul>
+         <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Me</a></li>
+        <li><a href="blog-index.html">Blog</a></li>
+        <li><a href="portfolio.html">Portfolio</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+
+     <div id ="headshot">
+      <img src="imgs/Facebook in B&W copy.jpg" alt="Header Picture">
+    </div>
+  </div>
+
+    <div class="blog_content">
+      <span class = "blog_title">Ruby variable scoping</span> <span class ="blog_subtitle"> sometimes 'computah says NO'... </span>
+
+<p class ="blog_date">10th January 2014</p>
+
+<p>In Ruby variable scoping allows for variables to be accessible (or not!) in specific situations. This helps protect data by making it accessible only at certain levels in your program. There are 5 variables with attendant scope options:
+ </p>
+
+<p class="content_title">1. CONSTANTS </p>
+
+<p> No I'm not shouting... but constants do. They are indicated by an ALLCAPS naming convention <code>CONSTANT </code> Constant variables intended to be set once (and only updated at set intervals rather than be updated throughout the program). The intent to update them rarely is reinforced by Ruby which issues a warning message anytime you try to change a constant variable. They are accessible from anywhere within the place they were set. If they are set outside an object, they are accessible globally throughout a program. If they are set within a class or method, they are accessible only within that class or method.  :</p>
+<pre><code>
+
+  SOURCE_DATA = {"important"=>"stuff", "more_important=>stuff"}
+
+</code></pre>
+
+<p class="content_title">2. Global Variables   </p>
+
+<p> Let's get this out of the way - global variables are dangerous! Global variables are accessible from anywhere within the program, regardless of where they are declared. Unlike constants, global variables can be changed easily without a warning message - making debugging difficult. They are denoted with a dollar sign (“$”) in front of the variable name (which makes them harder to 'accidentally' overwrite than in Javascript at least!).
+</a>  </p>
+
+
+<p class="content_title">3. Class Variables </p>
+
+<p> Class variables are shared among all instances of a particular class (Ruby classes were discussed in the last post <a href ="t5-ruby-classes.html"> here </a>). Given that Class Variables sharing approach to scope if an object changes the class variable, it will be changed for all instances of the class variable later on. Class variables are denoted with @@ before the variable name (e.g., @@car_speed) and are initialized when the class is created. 
+ </p>
+<p class="content_title">4. Instance Variables </p>
+
+<p> Instance variables. Denoted with @ before the variable name (e.g., @car_color), instance variables are local to specific instances of an object. They let you use the same variable across all the methods within your class. For example you might have the object of a class called Cars and set an instance variable called @car_color which would allow you to set the color of the car in your specific car class and then reference it later methods within that same class. 
+ </p>
+
+ <p class="content_title">5. Local Variables </p>
+
+<p> Our lucky last, local variables, are the most basic type of variable. They are named without any prepend (e.g., car). Local variables are only accessible immediately where they are declared. For example, a local variable declared within a method is only accessible within that method. 
+ </p>
+
+</div>
+
+
+</div>
+
+<div id = "clearwrap">
+</div>
+
+
+    <div id="footer">
+     <ul>
+        <li><a href="http://www.twitter.com"><img src="imgs/Twitter_logo_blue.png"></a></li>
+        <li><a href="http://www.facebook.com"><img src="imgs/FB-f-Logo__blue_72.png"></a></li>
+        <li><a href="http://www.linkedin.com"><img src="imgs/LinkedIN.png"></a></li>
+        <li><a href="http://www.github.com/"><img src="imgs/Octocat.jpg"></a></li>
+      </ul>
+    </div>
+
+
+  </body>
+
+</html>
