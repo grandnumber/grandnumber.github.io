@@ -1,0 +1,95 @@
+
+<!DOCTYPE html>
+  <head>
+    <title>Janet Brown</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="blog-stylesheet.css">
+    <link rel="stylesheet" type="text/css" href="default-stylesheet.css">
+  </head>
+
+  <body>
+   <div id ="title">
+
+    Janet Brown
+   </div>
+
+    <div id="nav">
+      <ul>
+         <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Me</a></li>
+        <li><a href="blog-index.html">Blog</a></li>
+        <li><a href="portfolio.html">Portfolio</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+
+     <div id ="headshot">
+      <img src="imgs/Facebook in B&W copy.jpg" alt="Header Picture">
+    </div>
+  </div>
+
+    <div class="blog_content">
+      <span class = "blog_title">Ruby vs Javascript</span> <span class ="blog_subtitle"> going loopy </span>
+
+<p class ="blog_date">17th January 2014</p>
+
+<p>We have changed tack and started learning Javascript this week. 
+ </p>
+
+<p class="content_title">1. Looping in Ruby  </p>
+
+<p> So, if we have a simple array, we can loop through it using the Ruby enumerable each merely telling it to take each item in the array and add it to our sum. Yields the result 6.
+
+
+<pre><code>
+my_array = [1,2,3]
+sum = 0 
+my_array.each { |x| sum +=x  }
+p sum //6 
+
+</code></pre>
+</p>
+
+<p class="content_title">2. Looping in Javascript   </p>
+
+<p> In contrast, javascript does not have an each builtin method (underscore is a library that can access an each function - but it is not built-in). In order to loop through the array we need to tell the interpreter 2 key things: 
+
+1. To create a variable "i", start at 0, continue looping through to the array til the final index (i < array.length) and continue going upwards through the array items by increasing index (i++). 
+
+2. We then need to tell it to add each item in the array (my_array[i]) to the result variable. 
+
+This too yields our simple result of 6. But with a bit more work and typing !! 
+<pre><code>
+var my_array = [1,2,3];
+var result = 0;
+for(var i=0; i < my_array.length; i++) {result += my_array[i];}
+console.log(result); //6 
+
+</code></pre>
+
+</p>
+
+
+
+</div>
+
+
+</div>
+
+<div id = "clearwrap">
+</div>
+
+
+    <div id="footer">
+     <ul>
+        <li><a href="http://www.twitter.com"><img src="imgs/Twitter_logo_blue.png"></a></li>
+        <li><a href="http://www.facebook.com"><img src="imgs/FB-f-Logo__blue_72.png"></a></li>
+        <li><a href="http://www.linkedin.com"><img src="imgs/LinkedIN.png"></a></li>
+        <li><a href="http://www.github.com/"><img src="imgs/Octocat.jpg"></a></li>
+      </ul>
+    </div>
+
+
+  </body>
+
+</html>
